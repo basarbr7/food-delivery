@@ -1,9 +1,28 @@
 import React from 'react'
 import './index.css'
 
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import Root from './Root';
+import Home from './page/Home';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route index element={<Home/>}></Route>
+    </Route>
+  )
+);
+
+
+
 const App = () => {
   return (
-    <div className='bg-red-500 text-xl font-bold '>App</div>
+    <RouterProvider router={router}/>
   )
 }
 
