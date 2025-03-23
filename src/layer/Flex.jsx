@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Flex = ({flex, children}) => {
+const Flex = ({className, children}) => {
   return (
-    <div className={`flex ${flex}`}>{children}</div>
+    <div className={`flex ${className}`}>{children}</div>
   )
 }
 
