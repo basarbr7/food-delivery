@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
         <Container className="text-2xl">
-            This is Home
+            
         </Container>
     </div>
   )
