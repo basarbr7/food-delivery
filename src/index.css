@@ -4,5 +4,12 @@
     --font-Poppins: "Poppins", sans-serif;
     --color-main: #FC8A06;
     --color-green: #028643;
-    --color-white: #ffffff
+    --color-white: #ffffff;
+}
+.active:hover{
+    color: rgb(123, 122, 122);
+}
+.active{
+    background: #FC8A06;
+    padding: 9px 32px;
 }
